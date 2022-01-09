@@ -20,7 +20,7 @@ body{
     position: fixed;
     height: 3rem;
     width: 100%;
-    background-color: #4a9b7f;
+    background: linear-gradient(90deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
 
 }
 .nav-list{
@@ -29,6 +29,9 @@ body{
 .nav-list li{
     padding: 0 2rem;
     list-style: none;
+}
+.nav-list li a:hover{
+    color: rgb(125, 255, 142);
 }
 a {
     text-decoration: none;
@@ -52,7 +55,7 @@ a {
     color: rgb(125, 255, 142);
 }
 #welcome-section h4:hover{
-    color: rgb(140, 252, 155);
+    color: rgb(125, 255, 142);
 }
 
 span{
@@ -70,3 +73,77 @@ span:hover{
     }
 }
 
+
+#projects{
+    padding: 4rem;
+    margin: 0 5rem;
+    text-align:center;
+    background: rgba(78, 170, 138, 0.651);
+}
+#projects h3{
+    font-size: 2rem;
+}
+.prj{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.prj div{
+    width: 10rem;
+    height: 7rem;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.prj i{
+    display: block;
+    font-size: 2rem;
+}
+@media (max-width: 550px) {
+    #projects{
+        padding: 2rem 0;
+        margin: 0;
+        text-align:center;
+        background: rgba(78, 170, 138, 0.651);
+    }
+    .prj div{
+    margin: 1rem;
+    }
+}
+
+
+#contact{
+    text-align: center;
+    padding: 4rem;
+}
+
+#contact h3{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.contact-links a{
+    margin: 2rem;
+}
+.contact-links a i:hover{
+    font-size: 1.3rem;
+    color: rgb(23, 240, 255); ;
+}
+
+
+@media (max-width: 550px) {
+    #contact{
+        padding: 2rem;
+    }
+    
+    #contact h3{
+        font-size: 1.5rem;
+    }
+    .contact-links a{
+        margin: .6rem;
+    }
+}
