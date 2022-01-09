@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+    background: linear-gradient(90deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
+    color: #ffffff;
+}
+
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 3rem;
+    width: 100%;
+    background-color: #4a9b7f;
+
+}
+.nav-list{
+    display:flex;
+}
+.nav-list li{
+    padding: 0 2rem;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 2rem;
+}
+#welcome-section p{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+#welcome-section h1:hover{
+    color: rgb(125, 255, 142);
+}
+#welcome-section h4:hover{
+    color: rgb(140, 252, 155);
+}
+
+span{
+    color: rgb(170, 247, 243);
+}
+span:hover{
+    color: #ffffff;
+}
+@media (max-width: 550px) {
+    #welcome-section{
+        font-size: 1rem;
+    }
+    #welcome-section h1,h4,p{
+        text-align:center;
+    }
+}
+
